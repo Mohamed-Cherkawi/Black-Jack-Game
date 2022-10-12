@@ -14,4 +14,9 @@ public class Card {
     public Shape getCardShape() {
         return shape;
     }
+
+    @Override
+    public String toString() {
+        return "Card Value :" + getCardVal() + " || Card Shape : " + getCardShape() + "\n";
+    }
 }
