@@ -17,6 +17,6 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card Value :" + getCardVal() + " || Card Shape : " + getCardShape() + "\n";
+        return "Card Value : " + getCardVal() + " || Card Shape : " + getCardShape() + "\n";
     }
 }
