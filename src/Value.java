@@ -1,5 +1,5 @@
 public enum Value {
-    LAS("Las",(byte) 1 , (byte) 1 ),
+    LAS("Las",(byte) 1 , (byte) 1 ),// Can hold Two values 1 and 11 but by default i give it 1
     DOS("Dos", (byte) 2, (byte) 2) ,
     TRES("Tres", (byte) 3 , (byte) 3) ,
     CUATRO("Cuatro", (byte) 4 , (byte) 4) ,
@@ -26,7 +26,7 @@ public enum Value {
         return name;
     }
 
-    public byte getCardVal() {
+    public byte getCardGameVal() {
         return value;
     }
 
