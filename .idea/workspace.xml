@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47eb6a18-ff9d-41c0-9009-4656a62af29f" name="Changes" comment="Finished The SHuffle Card Method That Reorder the cards randomly in the array to prevent cheating ...">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ValidationMet.java" afterDir="false" />
+    <list default="true" id="47eb6a18-ff9d-41c0-9009-4656a62af29f" name="Changes" comment="Modified Some Little Things">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Value.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +73,42 @@
       <option name="project" value="LOCAL" />
       <updated>1665572447277</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Overrided ToString Method To Print Out The properties of The Card">
+      <created>1665613731221</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665613731221</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Created The Launching Game Method Wich know is able only to distribute randomly Cards for both dealer and player and shows every card its properties and Values and tells you if you the players got a black jack and gives the results of the two first cards given">
+      <created>1665613910890</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665613910890</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Created The Main Menu Wich now includes only the start Menu of The Game And Calss The Launching Game Method from The Game Class">
+      <created>1665613977610</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665613977610</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Grouped All The Methods That Will Help me To Validate User Input And Other Things ...">
+      <created>1665614035751</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665614035751</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Modified Some Little Things">
+      <created>1665614067154</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665614067154</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,6 +127,11 @@
     <MESSAGE value="Created The Classes And The Enums required To Create Each Card with its Properties ( NUmber , Shape , Value ) , And Currentlly Working On A Method That Will generate All The Cards And STore Them Into An Array List Based On The First Card As An Argument" />
     <MESSAGE value="Added Some Modifications And Created A Method That Will Generate The 52 Cards By Looping Through enums of each card" />
     <MESSAGE value="Finished The SHuffle Card Method That Reorder the cards randomly in the array to prevent cheating ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished The SHuffle Card Method That Reorder the cards randomly in the array to prevent cheating ..." />
+    <MESSAGE value="Overrided ToString Method To Print Out The properties of The Card" />
+    <MESSAGE value="Created The Launching Game Method Wich know is able only to distribute randomly Cards for both dealer and player and shows every card its properties and Values and tells you if you the players got a black jack and gives the results of the two first cards given" />
+    <MESSAGE value="Created The Main Menu Wich now includes only the start Menu of The Game And Calss The Launching Game Method from The Game Class" />
+    <MESSAGE value="Grouped All The Methods That Will Help me To Validate User Input And Other Things ..." />
+    <MESSAGE value="Modified Some Little Things" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified Some Little Things" />
   </component>
 </project>
