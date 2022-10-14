@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47eb6a18-ff9d-41c0-9009-4656a62af29f" name="Changes" comment="Modified Some Little Things">
+    <list default="true" id="47eb6a18-ff9d-41c0-9009-4656a62af29f" name="Changes" comment="Refactored Code ...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +107,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665614067154</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Modified Some Little Things Removed Some Useless Code Add Two Functions To COunt The Result Of A Picked CardsArray Value And Another Method To Get A Value Of A Specific Card">
+      <created>1665698046668</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665698046668</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Refactored Code ...">
+      <created>1665698076125</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665698076125</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +145,8 @@
     <MESSAGE value="Created The Main Menu Wich now includes only the start Menu of The Game And Calss The Launching Game Method from The Game Class" />
     <MESSAGE value="Grouped All The Methods That Will Help me To Validate User Input And Other Things ..." />
     <MESSAGE value="Modified Some Little Things" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified Some Little Things" />
+    <MESSAGE value="Modified Some Little Things Removed Some Useless Code Add Two Functions To COunt The Result Of A Picked CardsArray Value And Another Method To Get A Value Of A Specific Card" />
+    <MESSAGE value="Refactored Code ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored Code ..." />
   </component>
 </project>

@@ -6,17 +6,19 @@ public class Game {
     private int balance = 20_000; // $
     private ArrayList<Card> cardsList = new ArrayList<>();
     private int[] avalaibleBets = {1000 , 1500 , 2000 , 2500 , 3000 , 5000};// Storing avalaible bets
-
     private  ArrayList<Card> pickedUserCards = new ArrayList<>();
     private  ArrayList<Card> pickedDealerCards = new ArrayList<>();
+    private byte totalPlayerCardsValue;
+    private byte totalDealerCardsValue;
 
     // Rules : if Both black Jack -> Push /2 * 1.5 But if a black jack happens after first distribution it Only Counts As Double
     public void LaunchingNewGame(){
         /* *************************** Variables ***************************** */
-        byte chosenBetNum , totalPlayerCardsValue = 0 , totalDealerCardsValue = 0;
+        byte chosenBetNum ;
         byte[] cards_result_arr; // This Array Holds The Return Value Of The getTotalCardsValue  Method
         int chosenBet;
-        String balance_formatted , smallMess , lasMess1 = "" , lassMess2 = "";
+        boolean hasStanded = false;
+        String balance_formatted , smallMess;
         /* *************************** Variables ***************************** */
         System.out.println("\n Youre About To Start A New Game ... \n \n");
         do {
@@ -45,30 +47,35 @@ public class Game {
                     this.shuffleCards();
                     System.out.println("Distributing Cards .... \n");
                     /************************ User Play ************************/
-                    Collections.addAll(this.pickedUserCards , this.getRandomCard() , this.getRandomCard());
+                    Collections.addAll(this.pickedUserCards , this.hitCard() , this.hitCard());
                     System.out.println("Picked User Cards \n");
                     Card card1 = this.pickedUserCards.get(0);
                     Card card2 = this.pickedUserCards.get(1);
-                    cards_result_arr = this.getTotalCardsValue(card1 , card2); // This Methods Checks If The Player Hited A Las And Depends on his card situation the las will take either 1 or 11 and returns the sum of the two cards
-                    System.out.print("Given Card Number { 1 } : \t " + card1.getCardVal().getName() + " \tOf \t "+ card1.getCardShape().getName() + " \t Value |-> { " + cards_result_arr[0] +" }\n");
-                    System.out.print("Given Card Number { 2 } : \t " + card2.getCardVal().getName() + " \tOf \t "+ card2.getCardShape().getName() + " \t Value |-> { " + cards_result_arr[1] +" }\n");
-                    totalPlayerCardsValue = cards_result_arr[2];
-                    if(totalPlayerCardsValue == 21) System.out.println("\n \t \t \t \t <3 % £> $ &> * §> <3 % £> $ &> * §> : ) Yeaaaahhh You Got A {{ Black Jack }} <3 % £> $ &> * §> <3 % £> $ &> * §> \t \t \t \t\n");
-                    System.out.println("\nTotal Points Of The Cards : [ " + totalPlayerCardsValue + " ]\n");
+                    this.totalPlayerCardsValue = this.getTotalCardsValue(true);
+                    System.out.print("Given Card Number { 1 } : \t " + card1.getCardVal().getName() + " \tOf \t "+ card1.getCardShape().getName() + " \t Value |-> { " + getCardValue(card1 , true) +" }\n");
+                    System.out.print("Given Card Number { 2 } : \t " + card2.getCardVal().getName() + " \tOf \t "+ card2.getCardShape().getName() + " \t Value |-> { " + getCardValue(card2 , true) +" }\n");
+                    if(this.totalPlayerCardsValue == 21) {
+                        System.out.println("\n \t \t \t \t <3 % £> $ &> * §> <3 % £> $ &> * §> : ) Yeaaaahhh You Got A {{ Black Jack }} <3 % £> $ &> * §> <3 % £> $ &> * §> \t \t \t \t\n");
+                        hasStanded = true; // If The Player Got A Black Jack Means That either He Wins Or he Draws so he should stand
+                    }
+                    System.out.println("\nTotal Points Of The Cards : [ " + this.totalPlayerCardsValue + " ]\n");
                     /************************ Dealer Play ************************/
-                    Collections.addAll(this.pickedDealerCards , this.getRandomCard() , this.getRandomCard());
+                    Collections.addAll(this.pickedDealerCards , this.hitCard() , this.hitCard());
                     System.out.println("Picked Dealer Cards \n");
                     card1 = this.pickedDealerCards.get(0);
                     card2 = this.pickedDealerCards.get(1);
-                    cards_result_arr = this.getTotalCardsValue(card1 , card2);
-                    System.out.print("Given Card Number { 1 } : \t " + card1.getCardVal().getName() + " \tOf \t "+ card1.getCardShape().getName() + " \t Value |-> { " + cards_result_arr[0] +" }\n");
-                    System.out.print("Given Card Number { 2 } : \t \t \t ~ Second Dealer Card Is Flipped ~  \n");
-                    totalDealerCardsValue = cards_result_arr[2];
-                    if(totalDealerCardsValue == 21) System.out.println("\n \t \t \t \t <3 % £> $ &> * §> <3 % £> $ &> * §> : (  The Dealer Got  A {{ Black Jack }} <3 % £> $ &> * §> <3 % £> $ &> * §> \t \t \t \t\n");
-                    System.out.println("\nTotal Points Of The Cards : [ " + totalDealerCardsValue + " ]\n");
-                    // Clearing The Picked Delaer And Player Cards Array
-                    this.pickedDealerCards.clear(); this.pickedUserCards.clear();
+                    this.totalDealerCardsValue = this.getTotalCardsValue(false);
+                    System.out.print("Given Card Number { 1 } : \t " + card1.getCardVal().getName() + " \tOf \t "+ card1.getCardShape().getName() + " \t Value |-> { " + getCardValue(card1 , false) +" }\n");
+                    System.out.print("Given Card Number { 2 } : \t \t \t ~~ Second Dealer Card Is Flipped ~~ \n");
+                    while (!hasStanded){
 
+                    }
+                    if(this.totalDealerCardsValue == 21) {
+                        System.out.println("\n \t \t \t \t <3 % £> $ &> * §> <3 % £> $ &> * §> : (  The Dealer Got  A {{ Black Jack }} <3 % £> $ &> * §> <3 % £> $ &> * §> \t \t \t \t\n");
+                    }
+                    System.out.println("\nTotal Points Of The Cards : [ " + this.totalDealerCardsValue + " ]\n");
+                    // Clearing The Picked Dealer And Player Cards Array
+                    this.pickedDealerCards.clear(); this.pickedUserCards.clear();
             }
 
         }while (chosenBet != 0);
@@ -83,21 +90,33 @@ public class Game {
     public void shuffleCards(){
         Collections.shuffle(this.cardsList);
     }
-    public Card getRandomCard(){
+    public Card hitCard(){
         byte cardIndex = (byte) (Math.random() * this.cardsList.size());
         return this.cardsList.get(cardIndex);
     }
-    public byte getTotalCardsValue( ArrayList<Card> pickedCardsArr){
+    public void checkWhoWins(byte numState){ //If numState : -1 --> Dealer Wins || 0 --> Draw || 1 --> Player Wins
+
+    }
+    public void doubleBet(){}
+    public void splitCards(){}
+    public byte getTotalCardsValue(boolean state){
+        ArrayList<Card> arr = state ? this.pickedUserCards : this.pickedDealerCards;
         byte sum = 0;
-        for( Card card : pickedCardsArr ){
-            sum += card.getCardVal().getCardGameVal();
+        for( Card card : arr ){
+            if( card.getCardVal().getName().equals("Las") && sum <= 10) {
+                sum += 11;
+            }else {
+                sum += card.getCardVal().getCardGameVal();
+            }
         }
         return sum;
     }
-    public byte getCardValue( Card card ){
+    public byte getCardValue(Card card , boolean state){
+        byte total = state ? this.totalPlayerCardsValue : this.totalDealerCardsValue ;
         byte cardVal = card.getCardVal().getCardGameVal();
-        if( card.getCardVal().getName().equals("Las"))
+        if( card.getCardVal().getName().equals("Las") && total >= 10) {
             cardVal += 10;
+        }
         return cardVal;
     }
 
