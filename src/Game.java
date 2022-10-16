@@ -66,7 +66,7 @@ public class Game {
                     /************************ Ask User Choice ************************/
                     if (this.totalPlayerCardsValue == 21){
                         if(this.totalDealerCardsValue == 21) { // Draw
-                            System.out.print("Given Dealer Card Number { 2 } : \t " + card1.getCardVal().getName() + " \tOf \t "+ card1.getCardShape().getName() + " \t Value |-> { " + getCardValue(card2 , false) +" }\n");
+                            System.out.print("Given Dealer Card Number { 2 } : \t " + card2.getCardVal().getName() + " \tOf \t "+ card2.getCardShape().getName() + " \t Value |-> { " + getCardValue(card2 , false) +" }\n");
                             System.out.println("\n \t \t \t \t <3 % £> $ &> * §> <3 % £> $ &> * §> : (  The Dealer Got  A {{ Black Jack }} <3 % £> $ &> * §> <3 % £> $ &> * §> \t \t \t \t\n");
                             System.out.println("\nTotal Points Of The Dealer Cards : [ " + this.totalDealerCardsValue + " ]\n");
                             this.checkTheWinner((byte) 0);

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47eb6a18-ff9d-41c0-9009-4656a62af29f" name="Changes" comment="Finished The Game ...">
+    <list default="true" id="47eb6a18-ff9d-41c0-9009-4656a62af29f" name="Changes" comment="Refactored Code Fixed Some Bugs , I Think This is The Last Version Of The Project :)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Value.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665871729898</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Refactored Code Fixed Some Bugs , I Think This is The Last Version Of The Project :)">
+      <created>1665916349562</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665916349562</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +178,7 @@
     <MESSAGE value="Refactored Code , Removed Bugs &amp; Useless Code" />
     <MESSAGE value="Refactored Code , Removed Useless Code" />
     <MESSAGE value="Finished The Game ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished The Game ..." />
+    <MESSAGE value="Refactored Code Fixed Some Bugs , I Think This is The Last Version Of The Project :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored Code Fixed Some Bugs , I Think This is The Last Version Of The Project :)" />
   </component>
 </project>
