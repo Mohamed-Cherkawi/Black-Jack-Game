@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47eb6a18-ff9d-41c0-9009-4656a62af29f" name="Changes" comment="Refactored Code , Removed Bugs &amp; Useless Code">
+    <list default="true" id="47eb6a18-ff9d-41c0-9009-4656a62af29f" name="Changes" comment="Finished The Game ...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Value.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665773253542</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Refactored Code , Removed Useless Code">
+      <created>1665871695295</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665871695295</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Finished The Game ...">
+      <created>1665871729898</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665871729898</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,6 +171,8 @@
     <MESSAGE value="Modified Some Little Things Removed Some Useless Code Add Two Functions To COunt The Result Of A Picked CardsArray Value And Another Method To Get A Value Of A Specific Card" />
     <MESSAGE value="Refactored Code ..." />
     <MESSAGE value="Refactored Code , Removed Bugs &amp; Useless Code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored Code , Removed Bugs &amp; Useless Code" />
+    <MESSAGE value="Refactored Code , Removed Useless Code" />
+    <MESSAGE value="Finished The Game ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished The Game ..." />
   </component>
 </project>

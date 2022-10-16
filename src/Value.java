@@ -15,7 +15,7 @@ public enum Value {
     private final String name;
     private final byte value;
 
-    private Value(String name , byte value) {
+    Value(String name , byte value) {
         this.name = name;
         this.value = value;
     }
