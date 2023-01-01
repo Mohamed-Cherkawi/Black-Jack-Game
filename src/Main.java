@@ -5,7 +5,7 @@ public class Main {
         /* *************************** Game ***************************** */
         System.out.println("<3 % £> $ &> * §> ========================================= Black Jack Game ======================================= <3 % £> $ &> * §> \n");
         System.out.println("$|-->> Enter The [Start] Method To Begin A New Game");
-        System.out.println("$|-->> Enter [Leave] To Leave Applicaton");
+        System.out.println("$|-->> Enter [Leave] To Leave Application");
         System.out.print("\n \t Please Enter Your Choice Here : ");
         chosenOption = ValidationMet.stringScannerMeth((byte) 0);
         if(chosenOption.equals("start")) {

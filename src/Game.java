@@ -6,7 +6,7 @@ public class Game {
     private int balance = 20_000; // $
     private int chosenBet;
     private ArrayList<Card> cardsList = new ArrayList<>();
-    private short[] avalaibleBets = {1000 , 1500 , 2000 , 2500 , 3000 , 5000};// Storing avalaible bets
+    private final short[] availableBets = {1000 , 1500 , 2000 , 2500 , 3000 , 5000};// Storing available bets
     private  ArrayList<Card> pickedUserCards = new ArrayList<>();
     private  ArrayList<Card> pickedDealerCards = new ArrayList<>();
     private byte totalPlayerCardsValue;
@@ -33,7 +33,7 @@ public class Game {
             chosenBetNum = ValidationMet.getChoosenUserInputNumber((byte) 0 , (byte) 6 ,"The Number Of Chosen Bet");
             System.out.println("<3 % £> $ &> * §> <3 % £> $ &> * §> *%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*% <3 % £> $ &> * §> <3 % £> $ &> * §>\n");
             if(chosenBetNum == 0) break;
-            this.chosenBet =  this.avalaibleBets[--chosenBetNum];
+            this.chosenBet =  this.availableBets[--chosenBetNum];
             if( !(this.balance - this.chosenBet >= 0) ) {
                 System.out.println("\nYou Don't Have Enough Balance To Play With this Bet Or Your Balance run out  , Try Another Bet Or Come Back Later ... \n");
             }else {
